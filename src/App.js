@@ -1,17 +1,14 @@
 import './App.css';
-import Heading from './components/Heading';
-import Section1 from './components/Section1';
-import Section2 from './components/Section2';
-import Section3 from './components/Section3';
-
+import Fruits from './components/Fruits';
 function App() {
-  return <div className="App">
-    <Heading/>
-    <Section1/>
-    <Section2/>
-    <Section3/>
-  </div>
-  
+  const fruits = ["Apple", "Banana", "Orange", "Kiwi", "Pineapple"];
+  return (
+    <div className="App">
+      <p>These are all the fruits we have available with us</p>
+      <Fruits items={fruits} />
+
+    </div>
+  );
 }
 
 export default App;
